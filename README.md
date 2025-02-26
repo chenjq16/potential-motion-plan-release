@@ -216,11 +216,12 @@ Contact [Yunhao Luo](https://devinluo27.github.io/) if you have any questions or
 ## 📝 Citations
 If you find our work useful, please consider citing:
 ```
- @inproceedings{
-    luo2024potential,
-    title={Potential Based Diffusion Motion Planning},
-    author={Yunhao Luo and Chen Sun and Joshua B. Tenenbaum and Yilun Du},
-    booktitle={Forty-first International Conference on Machine Learning},
-    year={2024},
-  }
+@inproceedings{luo2024potential,
+  title={Potential Based Diffusion Motion Planning},
+  author={Luo, Yunhao and Sun, Chen and Tenenbaum, Joshua B and Du, Yilun},
+  booktitle={International Conference on Machine Learning},
+  pages={33486--33510},
+  year={2024},
+  organization={PMLR}
+}
 ```
