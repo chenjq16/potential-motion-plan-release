@@ -33,7 +33,18 @@ This is the official codebase for Potential Based Diffusion Motion Planning [ICM
 
 **Potential Based Diffusion Motion Planning and Generalization.** Our approach learns different potential functions over motion planning trajectories. In test time, different potentials can be directly combined and optimized to construct new motion plans. Our method directly generalizes to cluttered heterogeneous environments (right two) via composing potentials, while the potential functions are only trained on simple homogeneous environments (left two).
 
-
+<!-- 🚗 -->
+<!-- ## 🏎️ RoboRacer Platform -->
+## 🏎️ Planning on Real-World Vehicles
+Please also check our latest work on planning for real-world vehicle scenarios using the [F1TENTH Car](https://f1tenth.readthedocs.io/en/stable/getting_started/intro.html):
+> Rapid and Safe Trajectory Planning over Diverse Scenes through Diffusion Composition  
+[[Project page]](https://rstp-comp-diffuser.github.io/)
+[[Paper]](https://arxiv.org/abs/2507.04384)  
+[Wule Mao](mailto:wlmao@zju.edu.cn),
+[Zhouheng Li](https://zhouhengli.github.io/),
+[Yunhao Luo](https://devinluo27.github.io/),
+[Yilun Du](https://yilundu.github.io/),
+[Lei Xie](https://scholar.google.com/citations?hl=en&user=7ZZ_-m0AAAAJ&view_op=list_works&sortby=pubdate)
 
 
 
@@ -216,12 +227,10 @@ Contact [Yunhao Luo](https://devinluo27.github.io/) if you have any questions or
 ## 📝 Citations
 If you find our work useful, please consider citing:
 ```
-@inproceedings{luo2024potential,
-  title={Potential Based Diffusion Motion Planning},
+@article{luo2024potential,
+  title={Potential based diffusion motion planning},
   author={Luo, Yunhao and Sun, Chen and Tenenbaum, Joshua B and Du, Yilun},
-  booktitle={International Conference on Machine Learning},
-  pages={33486--33510},
-  year={2024},
-  organization={PMLR}
+  journal={arXiv preprint arXiv:2407.06169},
+  year={2024}
 }
 ```
