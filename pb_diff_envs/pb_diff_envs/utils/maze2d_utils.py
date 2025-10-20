@@ -1,9 +1,9 @@
 from scipy import interpolate
 import numpy as np
 import matplotlib.pyplot as plt
-from pb_diff_envs.environment.dynamic_rrgroup import DynamicRectangleWall, DynamicRecWallGroup
-from pb_diff_envs.objects.trajectory import WaypointLinearTrajectory
-from pb_diff_envs.environment.rand_rec_group import RectangleWall, RectangleWallGroup
+# from pb_diff_envs.environment.dynamic_rrgroup import DynamicRectangleWall, DynamicRecWallGroup
+# from pb_diff_envs.objects.trajectory import WaypointLinearTrajectory
+# from pb_diff_envs.environment.rand_rec_group import RectangleWall, RectangleWallGroup
 from typing import List
 import imageio, os
 
@@ -86,6 +86,9 @@ class SplineInterp:
 
 def get_is_collision_wtrajs(r_traj, wtrajs, hExts, min_to_wall_dist=0.01) -> np.ndarray:
     """used in visualization"""
+    # 将导入移动到函数内部
+    from pb_diff_envs.environment.dynamic_rrgroup import DynamicRectangleWall, DynamicRecWallGroup
+    from pb_diff_envs.objects.trajectory import WaypointLinearTrajectory
     
     assert r_traj.shape[0] == wtrajs.shape[1]
     recWall_list = []
@@ -107,7 +110,8 @@ def get_is_collision_wtrajs(r_traj, wtrajs, hExts, min_to_wall_dist=0.01) -> np.
 
 def get_is_collision_static(r_traj, center_pos_list, hExt_list, min_to_wall_dist=0.01) -> np.ndarray:
     """used in visualization"""
-    
+    from pb_diff_envs.environment.rand_rec_group import RectangleWall, RectangleWallGroup
+
     recWall_list = []
 
     for i_w in range(len(center_pos_list)):
