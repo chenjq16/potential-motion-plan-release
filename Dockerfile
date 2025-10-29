@@ -1,5 +1,5 @@
 # 使用官方 CUDA devel 镜像作为基础
-FROM nvidia/cuda:11.8.0-devel-ubuntu22.04
+FROM nvidia/cuda:12.8.0-devel-ubuntu22.04
 
 # 设置一些环境变量，避免安装过程中的交互式提问
 ENV DEBIAN_FRONTEND=noninteractive
