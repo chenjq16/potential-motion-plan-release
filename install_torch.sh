@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ## TODO: Please check your cuda version
-pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
 
-TORCH_V=torch-2.0.1
-CUDA_V=cu118
+TORCH_V=torch-2.8.0
+CUDA_V=cu128
 
 
 ## The installation of the additional torch packages below might take ~10 minutes
