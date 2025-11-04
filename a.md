@@ -17,7 +17,7 @@
     unzip dualkuka14d-base.zip -d .
     unzip kuka7d-base.zip -d .
     unzip maze2d-concave-base.zip -d .
-    unzip maze2d-dynamic-base -d .
+    unzip maze2d-dyanmic-base.zip -d .
     unzip maze2d-static1-base.zip -d .
     unzip maze2d-static2-base.zip -d .
     unzip rm2d-comp.zip -d .
@@ -25,4 +25,6 @@
 
     export PYTHONPATH=$(pwd)/pb_diff_envs:$PYTHONPATH
 
+    // install uvx
+    wget -qO- https://astral.sh/uv/install.sh | sh
     uvx nvitop
